@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'header header header'
+            'navbar  navbar navbar'
+            'banner banner offer1'
+            'banner banner offer2'
+            'menu product product'
+            'recent product product'
+            'tag product product'
+            'footer footer footer'
+        ;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 100px repeat(8, 100px);
+        gap: 10px;
+    }
+
+    .header {
+        grid-area: header;
+        background-color: rgb(25, 115, 241);
+        text-align: center;
+        align-content: center;
+    }
+
+    .navbar {
+        grid-area: navbar;
+        background-color: rgb(162, 90, 90);
+        text-align: center;
+        align-content: center;
+    }
+
+    .banner {
+        grid-area: banner;
+        background-color: aqua;
+        text-align: center;
+        align-content: center;
+    }
+
+    .offer1 {
+        grid-area: offer1;
+        background-color: antiquewhite;
+        text-align: center;
+        align-content: center;
+
+    }
+
+    .offer2 {
+        grid-area: offer2;
+        background-color: rgb(100, 182, 45);
+        text-align: center;
+        align-content: center;
+    }
+
+    .menu {
+        grid-area: menu;
+        background-color: rgb(232, 229, 69);
+        text-align: center;
+        align-content: center;
+
+    }
+
+    .recent {
+        grid-area: recent;
+        background-color: rgb(157, 70, 86);
+        text-align: center;
+        align-content: center;
+
+    }
+
+    .tag {
+        grid-area: tag;
+
+        background-color: rgb(170, 181, 163);
+        text-align: center;
+        align-content: center;
+
+    }
+
+    .product {
+        grid-area: product;
+        background-color: rgb(102, 111, 177);
+        text-align: center;
+        align-content: center;
+
+    }
+
+    .footer {
+        grid-area: footer;
+
+        background-color: rgb(215, 112, 38);
+        text-align: center;
+        align-content: center;
+
+    }
+</style>
+
+<body>
+    <div class="grid-container">
+        <div class="header">1.Global message</div>
+        <div class="navbar">2. navbar</div>
+        <div class="banner">3. Banner</div>
+        <div class="offer1">4. Offer1</div>
+        <div class="offer2">5. Offer2</div>
+        <div class="menu">6. Left sided menu</div>
+        <div class="recent">7. Recent</div>
+        <div class="tag">8. Tags</div>
+        <div class="product">9. product</div>
+        <div class="footer">10. footer</div>
+    </div>
+</body>
+
+</html>
